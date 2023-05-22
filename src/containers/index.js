@@ -1,0 +1,6 @@
+export * from './AboutPage'
+export * from './DeliveryPage'
+export * from './FooterPage'
+export * from './HomePage'
+export * from './NavBar'
+export * from './TopRated'

@@ -1,0 +1,104 @@
+.home {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: #ebdbc8;
+    gap: 1rem;
+}
+
+.home-text {
+    flex: 1 1 17rem;
+}
+
+.home-img {
+    flex: 1 1 17rem;
+}
+
+.home-img img {
+    animation: growUpImg 5s linear infinite;
+}
+
+.home-text span {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--second-color);
+}
+
+.home-text h1 {
+    font-size: 3.2rem;
+    color: var(--main-color);
+    font-weight: bolder;
+}
+
+.home-text h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--second-color);
+    text-transform: uppercase;
+    margin: 0.5rem 0 1.4rem;
+}
+
+.btn {
+    padding: 7px 16px;
+    border: 2px solid var(--second-color);
+    border-radius: 40px;
+    color: var(--second-color);
+    font-weight: 500;
+}
+
+.btn:hover {
+    color: #fff;
+    background: var(--second-color);
+}
+
+@keyframes growUpImg {
+    0% {
+        width: 100%;
+    }
+
+    50% {
+        width: 110%;
+        box-shadow: none
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+
+@media (max-width: 991px) {
+
+    section {
+        padding: 50px 4%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 50px 7%;
+    }
+
+    .home-text span {
+        font-size: 0.9rem;
+    }
+
+    .home-text h1 {
+        font-size: 2.4rem;
+    }
+
+    .home-text h2 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .home-text {
+        padding-top: inherit;
+    }
+}
